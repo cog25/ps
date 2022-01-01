@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compile",
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "command": "g++",
+            "args": ["${file}", "-o", "./${relativeFileDirname}/${fileBasenameNoExtension}.out"],
+            "presentation": {
+                "reveal": "silent",
+                "clear": true,
+                "close": true
+            }
+        }
+    ]
+}
